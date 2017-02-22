@@ -1,0 +1,95 @@
+html, body, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, tt, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: normal;
+    font-style: normal;
+    color: #111111;
+    /*height: 100%;*/
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7eef4;
+    font-family: Georgia, serif;
+    letter-spacing: -0.01em;
+    word-spacing: 0.2em;
+    line-height: 1.8em;
+    font-size: 62.5%;
+    color: #111111;
+    width: 98%;
+    /*height: 100%;*/
+}
+.container{
+    background:#e7eef4 url("../images/header-bg.jpg") no-repeat center top;
+    width: 100%;
+    /*height: 100%;*/
+}
+#header{
+    width: 960px;
+    margin:0 auto;
+    height: 260px;
+    position: relative;
+
+}
+#header-content{
+    position: absolute;
+    left: 30px;
+    top: 190px;
+    color: #494949;
+    font-size: 24px;
+    font-weight: 300;
+}
+#homepage h3{
+    font-size: 2.2em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+ul li {
+    list-style-type: square;
+}
+#content{
+    width: 960px;
+    margin:0 auto;
+    background-color: #e7eef4;
+    padding: 10px;
+}
+#content ul{
+    padding:12px 30px 40px;
+}
+#content ul li.blog-list{
+    font-size: 1.6em;
+    line-height: 220%;
+    color: rgba(0,0,0,0.5);
+}
+#content a:hover{
+    text-decoration: underline;
+}
+#content a:visited {
+    color: #556677;
+}
+#content a:link {
+    color: #556677;
+}
+article .page-title{
+    line-height: 250%;
+    font-family: 'Trebuchet MS', Arial, 'Lucida Grande', Verdana, Lucida, Helvetica, sans-serif;
+    margin: 0.4em 0 0.2em 0;
+    padding: 0 0 0.2em 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 2.88em;
+    letter-spacing: -0.03em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+article .asset-content.entry-content p{
+    margin-top: 1em;
+    line-height: 180%;
+    margin-left: 0.8em;
+    font-size: 1.6em;
+}
