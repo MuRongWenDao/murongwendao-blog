@@ -86,8 +86,24 @@ article .page-title{
     letter-spacing: -0.03em;
     border-bottom: 1px solid #d3d3d3;
 }
-
+article .asset-content{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3;
+}
 article .asset-content.entry-content p{
+    margin-top: 1em;
+    line-height: 180%;
+    margin-left: 0.8em;
+    font-size: 1.6em;
+}
+article .asset-content.entry-content p img{
+    border: 0.3em solid #d3d3d3;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+article .asset-content.entry-content strong{
     margin-top: 1em;
     line-height: 180%;
     margin-left: 0.8em;
