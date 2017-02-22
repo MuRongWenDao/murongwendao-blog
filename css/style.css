@@ -8,7 +8,10 @@ html, body, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
     font-weight: normal;
     font-style: normal;
     color: #111111;
-    /*height: 100%;*/
+    height: 100%;
+}
+img{
+    vertical-align: top;
 }
 body{
     margin: 0;
@@ -21,15 +24,22 @@ body{
     font-size: 62.5%;
     color: #111111;
     width: 98%;
-    /*height: 100%;*/
+    height: 100%;
 }
 .container{
     background:#e7eef4 url("../images/header-bg.jpg") no-repeat center top;
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
+}
+#inner-container{
+    /*position: relative;*/
+    width:960px;
+    margin:0 auto;
+    height: 100%;
+
 }
 #header{
-    width: 960px;
+    width: 100%;
     margin:0 auto;
     height: 260px;
     position: relative;
@@ -53,10 +63,11 @@ ul li {
     list-style-type: square;
 }
 #content{
-    width: 960px;
+    width: 100%;
     margin:0 auto;
     background-color: #e7eef4;
     padding: 10px;
+    min-height: 600px;
 }
 #content ul{
     padding:12px 30px 40px;
@@ -76,7 +87,7 @@ ul li {
     color: #556677;
 }
 article .page-title{
-    line-height: 250%;
+    line-height: 260%;
     font-family: 'Trebuchet MS', Arial, 'Lucida Grande', Verdana, Lucida, Helvetica, sans-serif;
     margin: 0.4em 0 0.2em 0;
     padding: 0 0 0.2em 0;
@@ -87,25 +98,39 @@ article .page-title{
     border-bottom: 1px solid #d3d3d3;
 }
 article .asset-content{
-    padding-bottom: 20px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #d3d3d3;
 }
+article .asset-content .bold{
+    padding:12px 0;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
 article .asset-content.entry-content p{
     margin-top: 1em;
     line-height: 180%;
-    margin-left: 0.8em;
     font-size: 1.6em;
 }
-article .asset-content.entry-content p img{
+article .img-wrapper img{
     border: 0.3em solid #d3d3d3;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
     border-radius: 1em;
 }
-article .asset-content.entry-content strong{
-    margin-top: 1em;
-    line-height: 180%;
-    margin-left: 0.8em;
+
+#footer{
+    width: 100%;
+    border-top: 1px solid #d3d3d3;
+    color: #d3d3d3;
+    padding-top: 0;
+    clear: both;
+    line-height: 1.2;
+
+}
+#footer p{
+    text-align: center;
     font-size: 1.6em;
+    margin: 1em 2em;
+    padding: 0.3em;
+    color: gray;
 }

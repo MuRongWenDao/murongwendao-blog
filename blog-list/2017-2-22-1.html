@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="container">
+    <div id="inner-container">
     <div id="header" >
         <div id="header-inner">
             <div id="header-content">
@@ -22,23 +23,23 @@
                 </div>
 
                 <div class="asset-content entry-content">
-                    <strong>javaScript原型、原型链的定义？</strong>
+                    <div class="bold">javaScript原型、原型链的定义？</div>
                     <p>prototype:每个函数都有一个prototype(显式原型)，这个属性是一个对象（属性的集合），默认有一个叫做constructor（和_proto_）的属性，指向这个函数本身。
                         </p>
                     <p>所有的实例需要共享的属性和方法，都可以放在prototype对象中，那些不需要的则放在“构造函数”中，
-                        从外界看来，prototype对象好像是实例原型的对象，而实例对象则像是继承了prototype一样。</p><br/>
+                        从外界看来，prototype对象好像是实例原型的对象，而实例对象则像是继承了prototype一样。</p>
                     <p>__proto__：每个对象都具有属性__proto__，可称为隐式原型，一个对象的隐式原型指向构造该对象的构造函数的原型，这也保证了实例能够访问在构造函数原型中定义的属性和方法。</p>
                    <p>由于原型对象本身也是对象，它也有自己的原型，而它自己的原型对象又可以有自己的原型，这样就组成了一条链，这个就是原型链，JavaScritp引擎在访问对象的属性时，
                        如果在对象本身中没有找到，则会去原型链中查找，如果找到，直接返回值，如果整个链都遍历且没有找到属性，则返回undefined.原型链一般实现为一个链表，这样就可以按照一定的顺序来查找。</p>
 
-                    <div><strong>prototype与__proto__的区别与联系</strong></div>
-                    <p><img src="../images/1.jpg" alt=""/></p>
+                    <div class="bold">prototype与__proto__的区别与联系</div>
+                    <div class="img-wrapper"><img src="../images/1.jpg" alt=""/></div>
 
                     <p>关系：instance.constructor.prototype = instance.__proto__</p>
                     <p>js没有“父类”和“子类”的概念，也没有“类”和“实例”的区分，全靠一种奇特的“原型链”模式来实现继承。当我们访问一个对象的属性时，
                     如果这个对象内部不存在这个属性，那么他就会去_proto_依次查找，一直到object的内建对象。这个内建对象也即是object.portotype,它的_porto_值为null</p>
-                    
-                    <p>总结：</p>
+
+                    <div class="bold">总结：</div>
                      <p>  1.对象有属性__proto__,指向该对象的构造函数的原型对象。</p>
                         <p>2.方法除了有属性__proto__,还有属性prototype，prototype指向该方法的原型对象。</p>
 
@@ -49,9 +50,13 @@
 
         </article>
     </div>
+        <div id="footer">
+            <div id="footer-content">
+                <p>Made by MuRongWenDao</p>
+            </div>
+        </div>
 
-
-
+    </div>
 </div>
 
 </body>
